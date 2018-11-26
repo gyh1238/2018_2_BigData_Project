@@ -4,7 +4,9 @@ import numpy as np
 from urllib.parse import quote
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
+import pandas as pd
 import json
+import threading
 
 
 def jibun_to_location(data, atype='Google'):
@@ -75,11 +77,27 @@ def jibun_to_location(data, atype='Google'):
                         raise ValueError
                 else:
                     raise ValueError
+    else:
+        raise KeyError
 
     location_list.append(Series(latitude_list, name='위도'))
     location_list.append(Series(longitude_list, name='경도'))
     return location_list
 
 
-def location_to_manhattan():
-    print("Test")
+def location_to_manhattan(data, feature, distance=0.01):
+    """
+    1. |스타벅스의 위도 - 좌표의 위도| + |스타벅스의 경도 - 좌표의 경도| = Manhattan Distance
+    2. dict("lat": " ", "lng": " ", "count":" ") append to list
+    """
+    result = list()
+    for i in range(0, len(data)):
+        result.append(
+            dict({"lat": data.iloc[i]['위도'],
+                  "lng": data.iloc[i]['경도'],
+                  "count": feature[abs(feature['위도'] - data.iloc[i]['위도'])
+                                   + abs(feature['경도'] - data.iloc[i]['경도']) < distance].shape[0]}
+                 )
+        )
+    return result
+
