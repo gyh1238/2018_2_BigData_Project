@@ -5,19 +5,17 @@ import pandas as pd
 if __name__ == '__main__':
     # 전체데이터_서울_원본.xlsx 불러오기
     raw_data = pd.read_excel("/Users/seopaul/Desktop/2018_2_BigData_Project/data/raw_data/전체데이터_서울_원본.xlsx")
-    data = raw_data[['소재지전체주소', '사업장명', '영업상태명']]
 
     # 통합.xlsx 불러오기
     store = pd.read_excel("/Users/seopaul/Desktop/2018_2_BigData_Project/data/통합.xlsx")
 
     # 지번주소 필터링
     jibun = raw_data['소재지전체주소']
-    jibun = jibun_filter(jibun)
-    print(len(raw_data))
-    print(len(jibun))
-    
+    result = jibun_filter(jibun)
+
     # 저장
-    store['프렌차이즈_지번_주소_명'] = jibun
+    store['프렌차이즈_원본_지번_주소_명'] = jibun
+    store['프렌차이즈_지번_주소_명'] = result
     store.to_excel("/Users/seopaul/Desktop/2018_2_BigData_Project/data/통합.xlsx", index=False)
 
     '''
