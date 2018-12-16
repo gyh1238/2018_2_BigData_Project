@@ -1,22 +1,20 @@
 # -*- coding: utf-8 -*-
-from mapAPI.filter import jibun_filter
+from mapAPI.v2.filter_v2 import JibunFilter
 import pandas as pd
 
 if __name__ == '__main__':
-    # 전체데이터_서울_원본.xlsx 불러오기
-    raw_data = pd.read_excel("/Users/seopaul/Desktop/2018_2_BigData_Project/data/raw_data/전체데이터_서울_원본.xlsx")
+    j = JibunFilter()  # Jibun Filtering Object
 
-    # 통합.xlsx 불러오기
-    store = pd.read_excel("/Users/seopaul/Desktop/2018_2_BigData_Project/data/통합.xlsx")
+    # str type data
+    data_a = '서울특별시 종로구 명륜1가 36-27번지'
 
-    # 지번주소 필터링
-    jibun = raw_data[['소재지전체주소', '영업상태명']]
-    # jibun = jibun[jibun['영업상태명'] == '영업']
-    # jibun.index = pd.RangeIndex(len(jibun))
+    # list type data
+    data_b = ['서울특별시 종로구 명륜1가 36-27번지', '서울특별시 종로구 명륜1가 36-23번지']
 
-    result = jibun_filter(jibun['소재지전체주소'])
+    # Series type data
+    data_c = pd.Series(data_b)
 
-    # 저장
-    store['프렌차이즈_원본_지번_주소_명'] = jibun['소재지전체주소']
-    store['프렌차이즈_지번_주소_명'] = result
-    store.to_excel("/Users/seopaul/Desktop/2018_2_BigData_Project/data/통합.xlsx", index=False)
+    # Output type: ndarray
+    result_a = j(data_a)
+    result_b = j(data_b)
+    result_c = j(data_c)
