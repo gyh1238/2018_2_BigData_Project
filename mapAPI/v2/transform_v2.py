@@ -201,7 +201,7 @@ class CoordinateToManhattan:
                 except ValueError:
                     pass
                 else:
-                    info['정류장']['정보'] = tmp.values[idx]
+                    info['정류장']['정보'] = tmp.values
                     info['정류장']['거리'] = dt
                     info['정류장']['갯수'] = tmp.shape[0]
 
@@ -214,7 +214,7 @@ class CoordinateToManhattan:
                 except ValueError:
                     pass
                 else:
-                    info['횡단보도']['정보'] = tmp.values[idx]
+                    info['횡단보도']['정보'] = tmp.values
                     info['횡단보도']['거리'] = dt
                     info['횡단보도']['갯수'] = tmp.shape[0]
 

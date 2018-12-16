@@ -10,7 +10,7 @@ if __name__ == '__main__':
     google_api = JibunToCoordinate(atype='Google')  # Google API
     coordinate_to_manhattan = CoordinateToManhattan()  # Manhattan distance Calculator Object
 
-    search_data = '서울특별시 종로구 명륜1가 36-27번지 301호'
+    search_data = '서울특별시 종로구 창신동 372-0번지'
     filtered_data = jibun_filter(search_data)
 
     coordinate_data = naver_api(filtered_data)
