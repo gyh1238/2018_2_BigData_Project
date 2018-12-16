@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ec7fa1-3a14-4a3f-8939-aafa6927dfa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/example/coordinate_to_manhattan_ex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/jibun_to_coordinate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapAPI/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapAPI/v1/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapAPI/v2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapAPI/v2/filter_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapAPI/v2/transform_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/map/map1.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/map/map1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_data/2018유동인구.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_data/2018인구분포.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_data/스타벅스.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_data/유동인구(원본).xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_data/인구분포(원본).xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_data/최종목표.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/스타벅스.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/유동인구.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/인구분포.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/jibun_filter_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/jibun_filter_ex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/jibun_to_location_ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/location_to_manhattan_ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/map_visualization_ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/location_to_dong_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/location_to_dong_ex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapAPI/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapAPI/v1/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapAPI/tools.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapAPI/transform.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_visualization_ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapAPI/v1/transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/전체데이터.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapAPI/v2/transform_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapAPI/v2/transform_v2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,13 +14,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transform_v2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mapAPI/v2/transform_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1366">
+              <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+              <folding>
+                <element signature="e#24#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,12 +83,12 @@
         <option value="$PROJECT_DIR$/mapAPI/transform_v2.py" />
         <option value="$PROJECT_DIR$/example/location_to_dong_ex.py" />
         <option value="$PROJECT_DIR$/example/location_to_manhattan_ex2.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/mapAPI/v2/filter_v2.py" />
-        <option value="$PROJECT_DIR$/mapAPI/v2/transform_v2.py" />
         <option value="$PROJECT_DIR$/example/coordinate_to_manhattan_ex.py" />
         <option value="$PROJECT_DIR$/example/jibun_filter_ex.py" />
         <option value="$PROJECT_DIR$/example/jibun_to_coordinate.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/mapAPI/v2/transform_v2.py" />
       </list>
     </option>
   </component>
@@ -125,6 +109,17 @@
             <path>
               <item name="2018_2_BigData_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="2018_2_BigData_Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018_2_BigData_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018_2_BigData_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="mapAPI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018_2_BigData_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018_2_BigData_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="mapAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -157,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jibun_to_coordinate">
+  <component name="RunManager" selected="Python.main">
     <configuration name="coordinate_to_manhattan_ex" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="2018_2_BigData_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,10 +252,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.jibun_to_coordinate" />
         <item itemvalue="Python.jibun_filter_ex2" />
         <item itemvalue="Python.coordinate_to_manhattan_ex" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.jibun_transformer_ex" />
       </list>
     </recent_temporary>
@@ -306,7 +301,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="238" />
+      <option name="time" value="249" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -322,13 +317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="928" selection-start-line="928" selection-end-line="928" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/VirtualEnvs/bigData/lib/python3.6/site-packages/folium/utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
@@ -573,26 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapAPI/v2/filter_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1012">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapAPI/v2/transform_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#24#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/jibun_to_coordinate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -620,12 +588,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/VirtualEnvs/bigData/lib/python3.6/site-packages/folium/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapAPI/v2/filter_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapAPI/v2/transform_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1366">
+          <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+          <folding>
+            <element signature="e#24#60#0" expanded="true" />
           </folding>
         </state>
       </provider>

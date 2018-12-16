@@ -187,19 +187,36 @@ class CoordinateToManhattan:
 
         result = list()
         for d in data:
-            info = {'정류장': {'정보': None, '갯수': None},
-                    '횡단보도': {'정보': None, '갯수': None},
+            info = {'정류장': {'정보': None, '갯수': None, '거리': None},
+                    '횡단보도': {'정보': None, '갯수': None, '거리': None},
                     '지하철': {'정보': None, '거리': None},
                     '유동인구': {'정보': None, '인구수': None}}
             if distance['BUS'] is not None:
                 tmp = self.calc_manhattan(d, 'BUS')
-                info['정류장']['정보'] = tmp.values
-                info['정류장']['갯수'] = tmp.shape[0]
+
+                dt = [abs(t[2] - d[0]) + abs(t[3] - d[1]) for t in tmp.values]
+                try:
+                    idx = dt.index(min(dt))
+                    dt = min(dt)
+                except ValueError:
+                    pass
+                else:
+                    info['정류장']['정보'] = tmp.values[idx]
+                    info['정류장']['거리'] = dt
+                    info['정류장']['갯수'] = tmp.shape[0]
 
             if distance['CROSSWALK'] is not None:
                 tmp = self.calc_manhattan(d, 'CROSSWALK')
-                info['횡단보도']['정보'] = tmp.values
-                info['횡단보도']['갯수'] = tmp.shape[0]
+                dt = [abs(t[2] - d[0]) + abs(t[3] - d[1]) for t in tmp.values]
+                try:
+                    idx = dt.index(min(dt))
+                    dt = min(dt)
+                except ValueError:
+                    pass
+                else:
+                    info['횡단보도']['정보'] = tmp.values[idx]
+                    info['횡단보도']['거리'] = dt
+                    info['횡단보도']['갯수'] = tmp.shape[0]
 
             if distance['SUBWAY'] is not None:
                 tmp = self.calc_manhattan(d, 'SUBWAY')
